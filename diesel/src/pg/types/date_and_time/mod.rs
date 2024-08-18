@@ -14,6 +14,9 @@ mod std_time;
 #[cfg(feature = "time")]
 mod time;
 
+#[cfg(feature = "jiff")]
+mod jiff;
+
 #[cfg(feature = "postgres_backend")]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, AsExpression, FromSqlRow)]
 #[diesel(sql_type = Timestamp)]
